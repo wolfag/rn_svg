@@ -10,6 +10,7 @@ import React from 'react';
 import {SafeAreaView, Dimensions} from 'react-native';
 
 import DonutChart from './src/components/DonutChart';
+import Genealogy from './src/components/Genealogy';
 
 const {width} = Dimensions.get('screen');
 
@@ -47,9 +48,10 @@ const App = () => {
         flexWrap: 'wrap',
         marginTop: 100,
       }}>
-      {data.map((d, i) => {
+      {/* {data.map((d, i) => {
         return <DonutChart key={i} {...d} />;
-      })}
+      })} */}
+      <Genealogy />
     </SafeAreaView>
   );
 };
